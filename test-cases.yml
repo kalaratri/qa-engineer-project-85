@@ -1,0 +1,42 @@
+---
+- summary: |
+    Проверка входа пользователя с несуществующими email и паролем
+  requirement: |
+    При неправильном email или пароле пользователь должен получить сообщение об ошибке
+  prerequisites: |
+    Открыта страница Sign in
+  test-data: |
+    email = abc12345@mail.ru Пароль = password
+  steps:
+    - Вводим email и пароль
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Должно появиться сообщение об ошибке
+
+- summary: |
+    Проверка авторизации при существующем email и пароле
+  requirement: |
+    Пользователь должен успешно авторизоваться
+  prerequisites: |
+    Открыта страница Sign in
+  test-data: |
+    email = anna12345@mail.ru Пароль = password
+  steps:
+    - Вводим email и пароль
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен успешно войти в систему
+
+- summary: |
+    Проверка авторизации при существующем email и пароле
+  requirement: |
+    Пользователь должен успешно авторизоваться
+  prerequisites: |
+    Открыта страница Sign in
+  test-data: |
+    email = anna12345@mail.ru Пароль = password
+  steps:
+    - Вводим email и пароль
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Пользователь должен успешно войти в систему
